@@ -53,7 +53,7 @@ export default function SmartWaterBottlePage() {
             prototype design, feasibility analysis, brand identity, and go-to-market planning.
           </p>
           <p className="text-blue-300 text-base italic">
-            → Created Shark Tank-style pitch presentation showcasing the complete business model and market opportunity
+            → Created Shark Tank-style pitch presentation showcasing complete business model and market opportunity
           </p>
         </div>
 
