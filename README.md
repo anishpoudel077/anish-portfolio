@@ -2,6 +2,19 @@
 
 Professional portfolio website for Anish Poudel, Economics student at Michigan State University.
 
+## ✅ All Updates Complete
+
+- 85% zoom for better readability (like Ashrut's website)
+- "Resume" only (not "CV/Resume")  
+- Improved Resume button - more engaging and interactive
+- Photo modal shows full photo (like Ashrut's)
+- Smart Water Bottle images fixed:
+  - Hero image smaller and clearer
+  - Solution images same size
+  - Brand development images same size
+- College Football Analysis project fully integrated
+- All word replacements done (no "demonstrated", "rigorous", "valuable insights")
+
 ## Setup Instructions
 
 ### Prerequisites
@@ -63,7 +76,7 @@ anish-portfolio-final/
 └── (config files)
 ```
 
-# Deployment to Vercel
+## Deployment to Vercel
 
 1. Push your code to GitHub:
    ```bash
@@ -80,7 +93,7 @@ anish-portfolio-final/
 
 Your site will be live at: `anish-portfolio.vercel.app`
 
-# Built With
+## Built With
 
 - Next.js 14
 - React 18
@@ -88,7 +101,7 @@ Your site will be live at: `anish-portfolio.vercel.app`
 - Tailwind CSS
 - Vercel (deployment)
 
-# Contact
+## Contact
 
 - Email: poudelanish077@gmail.com
 - LinkedIn: linkedin.com/in/anish-poudel077/

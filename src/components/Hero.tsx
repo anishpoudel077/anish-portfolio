@@ -30,20 +30,20 @@ export default function Hero() {
                 Anish Poudel
               </h1>
               
-              <p className="text-lg md:text-xl text-text-secondary leading-relaxed mb-4 text-justify">
+              <p className="text-lg md:text-xl text-text-secondary leading-relaxed mb-4 text-left md:text-justify">
                 I am an undergraduate senior majoring in Economics at Michigan State University, with minors 
                 in Quantitative Data Analytics, Data Science, and Entrepreneurship. I work as an Undergraduate 
                 Research Assistant and Teaching Assistant in the Department of Economics, where I study Medicare 
                 Part D, insurer behavior, and public programs while supporting undergraduate instruction.
               </p>
 
-              <p className="text-lg md:text-xl text-text-secondary leading-relaxed mb-4 text-justify">
+              <p className="text-lg md:text-xl text-text-secondary leading-relaxed mb-4 text-left md:text-justify">
                 I specialize in econometric analysis, working with large administrative datasets, and financial 
                 risk assessment, skills I developed through my summer 2025 internship at State Street Corporation's 
                 Global Treasury Risk Management team in Boston.
               </p>
 
-              <p className="text-lg md:text-xl text-text-secondary leading-relaxed mb-6 text-justify">
+              <p className="text-lg md:text-xl text-text-secondary leading-relaxed mb-6 text-left md:text-justify">
                 I am interested in financial markets, risk management, and economic research, applying quantitative 
                 methods to understand business performance, policy outcomes, and real-world financial decisions.
               </p>

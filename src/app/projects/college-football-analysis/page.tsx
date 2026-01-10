@@ -31,9 +31,9 @@ export default function CollegeFootballAnalysisPage() {
 
         {/* Hero Image - Smaller */}
         <div className="mb-12 rounded-xl overflow-hidden shadow-2xl max-w-xl mx-auto">
-          <img 
-            src="/projects/cfb-hero.png" 
-            alt="College Football Playoff Analysis" 
+          <img
+            src="/projects/cfb-hero.png"
+            alt="College Football Playoff Analysis"
             className="w-full h-auto"
           />
         </div>
@@ -41,11 +41,11 @@ export default function CollegeFootballAnalysisPage() {
         {/* Quick Overview */}
         <div className="bg-slate-800/50 rounded-xl p-8 mb-12 border border-slate-700">
           <h3 className="text-2xl font-bold text-white mb-4">Project Overview</h3>
-          <p className="text-gray-300 text-lg leading-relaxed text-justify mb-4">
-            This data science project explored the dynamic world of college football by analyzing comprehensive statistics 
-            of College Football Playoff (CFB) teams from 2014 to 2022. Using linear regression models and data visualization 
-            in R, the analysis identified key offensive and defensive statistics that correlate with playoff success, compared 
-            the relevance of average versus total statistics, examined conference-wise performance variations, and identified 
+          <p className="text-gray-300 text-lg leading-relaxed text-left md:text-justify mb-4">
+            This data science project explored the dynamic world of college football by analyzing comprehensive statistics
+            of College Football Playoff (CFB) teams from 2014 to 2022. Using linear regression models and data visualization
+            in R, the analysis identified key offensive and defensive statistics that correlate with playoff success, compared
+            the relevance of average versus total statistics, examined conference-wise performance variations, and identified
             statistical snubs and underperformers in the playoff selection process.
           </p>
           <p className="text-blue-300 text-base italic">
@@ -64,7 +64,7 @@ export default function CollegeFootballAnalysisPage() {
               { id: 'comparison', title: '4. Average vs Total Stats' },
               { id: 'conference', title: '5. Conference Strength' },
               { id: 'snubs', title: '6. Snubs & Underperformers' },
-              { id: 'conclusions', title: '7. Conclusions & Impact' }
+              { id: 'conclusions', title: '7. Conclusions' }
             ].map((section) => (
               <button
                 key={section.id}
@@ -85,42 +85,37 @@ export default function CollegeFootballAnalysisPage() {
         <section id="research" className="mb-16 scroll-mt-24">
           <div className="bg-slate-800/50 rounded-xl p-8 border border-slate-700">
             <h3 className="text-3xl font-bold text-white mb-6">Research Questions</h3>
-            
-            <div className="space-y-6 text-gray-300 text-lg">
-              <p className="text-justify leading-relaxed">
-                The investigation was driven by four key motivating questions designed to uncover patterns and trends 
-                in College Football Playoff team performance across nine years of data (2014-2022).
-              </p>
 
+            <div className="space-y-6 text-gray-300 text-lg">
               <div className="space-y-4 mt-6">
                 <div className="bg-slate-700/50 rounded-lg p-6">
                   <h4 className="text-xl font-semibold text-blue-400 mb-3">Question 1: Key Statistics</h4>
-                  <p className="text-justify">
-                    What are the key offensive and defensive statistics that correlate with a team's success in reaching 
+                  <p className="text-left md:text-justify">
+                    What are the key offensive and defensive statistics that correlate with a team's success in reaching
                     the CFB playoffs? Which metrics truly matter for playoff-caliber performance?
                   </p>
                 </div>
 
                 <div className="bg-slate-700/50 rounded-lg p-6">
                   <h4 className="text-xl font-semibold text-blue-400 mb-3">Question 2: Average vs Total</h4>
-                  <p className="text-justify">
-                    Do average statistics (yards per game, points per game) hold more weight, or do total statistics 
+                  <p className="text-left md:text-justify">
+                    Do average statistics (yards per game, points per game) hold more weight, or do total statistics
                     (total yards, total points) tell a better story about team performance throughout the season?
                   </p>
                 </div>
 
                 <div className="bg-slate-700/50 rounded-lg p-6">
                   <h4 className="text-xl font-semibold text-blue-400 mb-3">Question 3: Conference Patterns</h4>
-                  <p className="text-justify">
-                    Are certain conferences consistently producing teams that excel in crucial statistics? How do 
+                  <p className="text-left md:text-justify">
+                    Are certain conferences consistently producing teams that excel in crucial statistics? How do
                     conference playing styles and strengths differ in producing playoff-ready teams?
                   </p>
                 </div>
 
                 <div className="bg-slate-700/50 rounded-lg p-6">
                   <h4 className="text-xl font-semibold text-blue-400 mb-3">Question 4: Selection Evaluation</h4>
-                  <p className="text-justify">
-                    Who were the snubs - teams that put up playoff-worthy numbers but didn't make the cut? And what 
+                  <p className="text-left md:text-justify">
+                    Who were the snubs - teams that put up playoff-worthy numbers but didn't make the cut? And what
                     about teams that underperformed statistically but still secured a playoff spot?
                   </p>
                 </div>
@@ -133,73 +128,24 @@ export default function CollegeFootballAnalysisPage() {
         <section id="methodology" className="mb-16 scroll-mt-24">
           <div className="bg-slate-800/50 rounded-xl p-8 border border-slate-700">
             <h3 className="text-3xl font-bold text-white mb-6">Methodology</h3>
-            
-            <div className="space-y-8">
+
+            <div className="space-y-6 text-gray-300 text-lg">
               <div>
-                <h4 className="text-2xl font-semibold text-blue-400 mb-4">Statistical Modeling</h4>
-                <p className="text-gray-300 text-lg text-justify leading-relaxed mb-4">
-                  The core of the analysis utilized linear regression models to identify the most significant offensive 
-                  and defensive statistics correlating with CFB Playoff success. By applying linear modeling techniques, 
-                  the team quantified the strength of relationships between various performance metrics and playoff qualification.
+                <h4 className="text-xl font-semibold text-blue-400 mb-3">Statistical Modeling</h4>
+                <p className="text-left md:text-justify mb-3">
+                  Applied linear regression models to identify key offensive and defensive statistics correlating
+                  with CFB Playoff success. Used R's step function to optimize model fit and calculated R-squared
+                  values to measure predictive accuracy.
                 </p>
-                <ul className="space-y-3 text-gray-300 text-lg">
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-3 text-xl">→</span>
-                    <span>Applied linear models separately to offensive and defensive statistics to determine individual impacts</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-3 text-xl">→</span>
-                    <span>Used step function in R to identify most correlated variables and optimize model fit</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-3 text-xl">→</span>
-                    <span>Calculated R-squared values to measure model effectiveness and predictive accuracy</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-3 text-xl">→</span>
-                    <span>Compared average statistics versus total season statistics as predictors</span>
-                  </li>
-                </ul>
               </div>
 
               <div>
-                <h4 className="text-2xl font-semibold text-blue-400 mb-4">Data Visualization</h4>
-                <p className="text-gray-300 text-lg text-justify leading-relaxed mb-4">
-                  Comprehensive data visualization techniques using ggplot2 in R made findings accessible and interpretable. 
-                  Visual representations were key to understanding complex statistical relationships and conference variations.
+                <h4 className="text-xl font-semibold text-blue-400 mb-3">Data Visualization & Analysis</h4>
+                <p className="text-left md:text-justify">
+                  Created comprehensive visualizations using ggplot2 including conference strength scatter plots,
+                  average vs total statistics comparisons, and year-by-year analysis identifying statistical trends.
+                  All data cleaning and modeling performed in R.
                 </p>
-                <ul className="space-y-3 text-gray-300 text-lg">
-                  <li className="flex items-start">
-                    <span className="text-green-400 mr-3">→</span>
-                    <span>Conference strength scatter plots showing offensive versus defensive model scores</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-400 mr-3">→</span>
-                    <span>Comparative visualizations for average versus total statistics relevance</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-400 mr-3">→</span>
-                    <span>Year-by-year analysis tables identifying statistical snubs and underperformers</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="text-2xl font-semibold text-blue-400 mb-4">Data Handling and Software</h4>
-                <ul className="space-y-3 text-gray-300 text-lg">
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-3 text-xl">→</span>
-                    <span>Data cleaning and preparation ensuring dataset consistency and proper formatting</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-3 text-xl">→</span>
-                    <span>Applied R packages including ggplot2 for visualization and lm() for linear modeling</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-3 text-xl">→</span>
-                    <span>Created custom functions for data manipulation and analysis automation</span>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
@@ -209,20 +155,19 @@ export default function CollegeFootballAnalysisPage() {
         <section id="models" className="mb-16 scroll-mt-24">
           <div className="bg-slate-800/50 rounded-xl p-8 border border-slate-700">
             <h3 className="text-3xl font-bold text-white mb-6">Statistical Models: Offense vs Defense</h3>
-            
-            <div className="mb-8 rounded-xl overflow-hidden">
-              <img 
-                src="/projects/cfb-models.png" 
-                alt="Offensive and Defensive Models" 
+
+            <div className="mb-8 rounded-xl overflow-hidden shadow-2xl max-w-3xl mx-auto">
+              <img
+                src="/projects/cfb-models.png"
+                alt="Offensive and Defensive Models"
                 className="w-full h-auto"
               />
             </div>
 
             <div className="space-y-6 text-gray-300 text-lg">
-              <p className="text-justify leading-relaxed">
-                Linear regression models were developed separately for offensive and defensive statistics to determine 
-                which side of the ball better predicts playoff success. The step function in R was used to identify the 
-                most correlated variables and build optimal models.
+              <p className="text-left md:text-justify leading-relaxed">
+                Linear regression models were developed separately for offensive and defensive statistics to determine
+                which side of the ball better predicts playoff success.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 mt-6">
@@ -262,8 +207,8 @@ export default function CollegeFootballAnalysisPage() {
               <div className="bg-blue-900/30 border border-blue-700 rounded-lg p-6 mt-6">
                 <h4 className="text-xl font-semibold text-blue-400 mb-3">Key Finding</h4>
                 <p className="text-lg">
-                  Offense is a slightly better predictor of playoff success than defense (R² 0.904 vs 0.895), though both 
-                  show strong correlations. While defense remains crucial, the ability to consistently score and gain yardage 
+                  Offense is a slightly better predictor of playoff success than defense (R² 0.904 vs 0.895), though both
+                  show strong correlations. While defense remains crucial, the ability to consistently score and gain yardage
                   may have a marginally greater impact on playoff prospects.
                 </p>
               </div>
@@ -275,19 +220,19 @@ export default function CollegeFootballAnalysisPage() {
         <section id="comparison" className="mb-16 scroll-mt-24">
           <div className="bg-slate-800/50 rounded-xl p-8 border border-slate-700">
             <h3 className="text-3xl font-bold text-white mb-6">Average vs Total Statistics Comparison</h3>
-            
-            <div className="mb-8 rounded-xl overflow-hidden">
-              <img 
-                src="/projects/cfb-avg-total.png" 
-                alt="Average vs Total Statistics" 
+
+            <div className="mb-8 rounded-xl overflow-hidden shadow-2xl max-w-3xl mx-auto">
+              <img
+                src="/projects/cfb-avg-total.png"
+                alt="Average vs Total Statistics"
                 className="w-full h-auto"
               />
             </div>
 
             <div className="space-y-6 text-gray-300 text-lg">
-              <p className="text-justify leading-relaxed">
-                A critical comparison examined whether per-game averages or total season statistics provide better 
-                predictive power for playoff qualification. This analysis revealed a dramatic difference in model effectiveness.
+              <p className="text-left md:text-justify leading-relaxed">
+                A critical comparison examined whether per-game averages or total season statistics provide better
+                predictive power for playoff qualification.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 mt-6">
@@ -330,8 +275,8 @@ export default function CollegeFootballAnalysisPage() {
               <div className="bg-green-900/30 border border-green-700 rounded-lg p-6 mt-6">
                 <h4 className="text-xl font-semibold text-green-400 mb-3">Key Finding</h4>
                 <p className="text-lg">
-                  Total season statistics are vastly superior predictors of playoff success compared to per-game averages 
-                  (R² 0.861 vs 0.368). Total stats provide a more comprehensive view of team performance throughout the season, 
+                  Total season statistics are vastly superior predictors of playoff success compared to per-game averages
+                  (R² 0.861 vs 0.368). Total stats provide a more comprehensive view of team performance throughout the season,
                   capturing the full extent of capabilities and consistency over time rather than game-by-game fluctuations.
                 </p>
               </div>
@@ -343,21 +288,19 @@ export default function CollegeFootballAnalysisPage() {
         <section id="conference" className="mb-16 scroll-mt-24">
           <div className="bg-slate-800/50 rounded-xl p-8 border border-slate-700">
             <h3 className="text-3xl font-bold text-white mb-6">Conference Strength Analysis</h3>
-            
-            <div className="mb-8 rounded-xl overflow-hidden">
-              <img 
-                src="/projects/cfb-conference.png" 
-                alt="Conference Strength" 
+
+            <div className="mb-8 rounded-xl overflow-hidden shadow-2xl max-w-3xl mx-auto">
+              <img
+                src="/projects/cfb-conference.png"
+                alt="Conference Strength"
                 className="w-full h-auto"
               />
             </div>
 
             <div className="space-y-6 text-gray-300 text-lg">
-              <p className="text-justify leading-relaxed mb-6">
-                Conference-wise analysis using the correlated statistical models revealed significant differences in playing 
-                styles and statistical profiles. The scatter plots compare conferences on offensive and defensive model scores, 
-                with the ideal position being the bottom-right quadrant (high offense scores, low defense scores indicating 
-                strong defense - remember lower defensive stats are better).
+              <p className="text-left md:text-justify leading-relaxed mb-6">
+                Conference-wise analysis using the correlated statistical models revealed significant differences in playing
+                styles and statistical profiles.
               </p>
 
               <div className="bg-slate-700/50 rounded-lg p-6 mb-6">
@@ -376,37 +319,37 @@ export default function CollegeFootballAnalysisPage() {
 
               <div>
                 <h4 className="text-2xl font-semibold text-blue-400 mb-4">Conference Performance Patterns</h4>
-                
+
                 <div className="space-y-4">
                   <div className="bg-slate-700/30 rounded-lg p-5">
                     <h5 className="font-semibold text-green-400 mb-2">SEC and ACC (Best Overall)</h5>
-                    <p className="text-justify">
-                      Consistently positioned in the bottom-right quadrant across both average and total statistics, 
-                      indicating strong balanced performance with excellent offense and defense. These conferences produce 
+                    <p className="text-left md:text-justify">
+                      Consistently positioned in the bottom-right quadrant across both average and total statistics,
+                      indicating strong balanced performance with excellent offense and defense. These conferences produce
                       the most playoff-ready statistical profiles.
                     </p>
                   </div>
 
                   <div className="bg-slate-700/30 rounded-lg p-5">
                     <h5 className="font-semibold text-yellow-400 mb-2">Big 12 and Pac-12 (Offensive-Oriented)</h5>
-                    <p className="text-justify">
-                      Higher offensive yards but relatively weaker defensive statistics, reflecting high-scoring, 
+                    <p className="text-left md:text-justify">
+                      Higher offensive yards but relatively weaker defensive statistics, reflecting high-scoring,
                       offensive-oriented playing styles. Strong in generating yardage and points but more vulnerable defensively.
                     </p>
                   </div>
 
                   <div className="bg-slate-700/30 rounded-lg p-5">
                     <h5 className="font-semibold text-blue-400 mb-2">Big Ten (Balanced Approach)</h5>
-                    <p className="text-justify">
-                      More defensive-oriented with lower offensive totals but strong defensive metrics. Balanced approach 
+                    <p className="text-left md:text-justify">
+                      More defensive-oriented with lower offensive totals but strong defensive metrics. Balanced approach
                       with moderate offensive and defensive scores, representing a more traditional, defense-first philosophy.
                     </p>
                   </div>
 
                   <div className="bg-slate-700/30 rounded-lg p-5">
                     <h5 className="font-semibold text-gray-400 mb-2">FBS Independent (Varied)</h5>
-                    <p className="text-justify">
-                      Varied positioning showing diverse playing styles among independent teams without consistent conference 
+                    <p className="text-left md:text-justify">
+                      Varied positioning showing diverse playing styles among independent teams without consistent conference
                       patterns or strategic uniformity.
                     </p>
                   </div>
@@ -416,9 +359,9 @@ export default function CollegeFootballAnalysisPage() {
               <div className="bg-blue-900/30 border border-blue-700 rounded-lg p-6 mt-6">
                 <h4 className="text-xl font-semibold text-blue-400 mb-3">Key Finding</h4>
                 <p className="text-lg">
-                  Conference variations reveal strategic and stylistic differences in approaches to the game. SEC and ACC 
-                  consistently produce the most playoff-ready statistical profiles with balanced excellence. Total statistics 
-                  analysis provided clearer separation between conferences than averages, further validating their superiority 
+                  Conference variations reveal strategic and stylistic differences in approaches to the game. SEC and ACC
+                  consistently produce the most playoff-ready statistical profiles with balanced excellence. Total statistics
+                  analysis provided clearer separation between conferences than averages, further validating their superiority
                   as predictors.
                 </p>
               </div>
@@ -430,11 +373,11 @@ export default function CollegeFootballAnalysisPage() {
         <section id="snubs" className="mb-16 scroll-mt-24">
           <div className="bg-slate-800/50 rounded-xl p-8 border border-slate-700">
             <h3 className="text-3xl font-bold text-white mb-6">Playoff Snubs & Underperformers Analysis</h3>
-            
-            <div className="mb-8 rounded-xl overflow-hidden">
-              <img 
-                src="/projects/cfb-snubs.png" 
-                alt="Snubs and Underperformers" 
+
+            <div className="mb-8 rounded-xl overflow-hidden shadow-2xl max-w-3xl mx-auto">
+              <img
+                src="/projects/cfb-snubs.png"
+                alt="Snubs and Underperformers"
                 className="w-full h-auto"
               />
             </div>
@@ -442,44 +385,35 @@ export default function CollegeFootballAnalysisPage() {
             <div className="space-y-8">
               <div>
                 <h4 className="text-2xl font-semibold text-blue-400 mb-4">Statistical Snubs</h4>
-                <p className="text-gray-300 text-lg text-justify leading-relaxed mb-4">
-                  Using the offensive and defensive models, teams were identified that had playoff-worthy statistics but 
-                  did not make the CFB Playoff. These teams scored higher than the average playoff team cutoff based on 
-                  the statistical models. This analysis does not necessarily mean these teams should have made the playoffs, 
+                <p className="text-gray-300 text-lg text-left md:text-justify leading-relaxed mb-4">
+                  Using the offensive and defensive models, teams were identified that had playoff-worthy statistics but
+                  did not make the CFB Playoff. These teams scored higher than the average playoff team cutoff based on
+                  the statistical models. This analysis does not necessarily mean these teams should have made the playoffs,
                   but rather identifies which teams would be next in line based purely on statistical performance.
                 </p>
-
-                <div className="bg-slate-700/30 rounded-lg p-6">
-                  <h5 className="text-lg font-semibold text-yellow-400 mb-3">Notable Snubs by Year:</h5>
-                  <div className="space-y-2 text-gray-300">
-                    <p><span className="text-blue-400 font-semibold">2014:</span> TCU, Baylor, Michigan State, Marshall, Georgia Tech</p>
-                    <p><span className="text-blue-400 font-semibold">2015:</span> Houston, Western Kentucky, Stanford, Ohio State, Iowa</p>
-                    <p><span className="text-blue-400 font-semibold">2016:</span> Western Michigan, Oklahoma, Western Kentucky, South Florida, Penn State</p>
-                    <p><span className="text-blue-400 font-semibold">2017:</span> UCF, Wisconsin, Ohio State, Florida Atlantic, Southern California</p>
-                    <p><span className="text-blue-400 font-semibold">2018:</span> Ohio State, UCF, Fresno State, Utah State, Georgia</p>
-                    <p><span className="text-blue-400 font-semibold">2019:</span> Appalachian State, Memphis, Oregon, Boise State, Georgia</p>
-                    <p><span className="text-blue-400 font-semibold">2020:</span> BYU, Coastal Carolina, Liberty, Cincinnati, App State</p>
-                    <p><span className="text-blue-400 font-semibold">2021:</span> Louisiana, Baylor, Houston, Oklahoma State, San Diego State</p>
-                    <p><span className="text-blue-400 font-semibold">2022:</span> Tulane, Troy, Tennessee, Washington, Southern California</p>
-                  </div>
-                </div>
               </div>
 
               <div>
                 <h4 className="text-2xl font-semibold text-blue-400 mb-4">Underperformers</h4>
-                <p className="text-gray-300 text-lg text-justify leading-relaxed mb-4">
-                  Teams that made the CFB Playoff but scored below the average of that year's statistical snubs were 
-                  classified as underperformers. If a team scored below average offensively and above average defensively 
-                  (indicating weaker defense - remember higher defensive stats are worse), they were considered statistical 
+                <p className="text-gray-300 text-lg text-left md:text-justify leading-relaxed mb-4">
+                  Teams that made the CFB Playoff but scored below the average of that year's statistical snubs were
+                  classified as underperformers. If a team scored below average offensively and above average defensively
+                  (indicating weaker defense - remember higher defensive stats are worse), they were considered statistical
                   underperformers.
                 </p>
 
                 <div className="bg-slate-700/30 rounded-lg p-6">
                   <h5 className="text-lg font-semibold text-red-400 mb-3">Identified Underperformers:</h5>
                   <div className="space-y-2 text-gray-300">
-                    <p><span className="text-blue-400 font-semibold">2014:</span> Florida State (14 games)</p>
-                    <p><span className="text-blue-400 font-semibold">2018:</span> Notre Dame (13-12-1 record)</p>
-                    <p><span className="text-blue-400 font-semibold">All Other Years (2015-2017, 2019-2022):</span> No significant underperformers identified</p>
+                    <p>
+                      <span className="text-blue-400 font-semibold">2014:</span> Florida State (14 games)
+                    </p>
+                    <p>
+                      <span className="text-blue-400 font-semibold">2018:</span> Notre Dame (13-12-1 record)
+                    </p>
+                    <p>
+                      <span className="text-blue-400 font-semibold">All Other Years (2015-2017, 2019-2022):</span> No significant underperformers identified
+                    </p>
                   </div>
                 </div>
               </div>
@@ -487,10 +421,10 @@ export default function CollegeFootballAnalysisPage() {
               <div className="bg-green-900/30 border border-green-700 rounded-lg p-6 mt-6">
                 <h4 className="text-xl font-semibold text-green-400 mb-3">Key Finding</h4>
                 <p className="text-lg text-gray-300">
-                  The minimal number of underperformers (only 2 out of 36 playoff teams from 2014-2022) shows the 
-                  CFB Playoff Committee's effectiveness in selecting teams. The statistical models largely validate the 
-                  committee's decisions, with only occasional discrepancies in 2014 and 2018. This suggests that while a 
-                  large number of teams meet statistical criteria for playoff selection, the committee's judgment-based 
+                  The minimal number of underperformers (only 2 out of 36 playoff teams from 2014-2022) shows the
+                  CFB Playoff Committee's effectiveness in selecting teams. The statistical models largely validate the
+                  committee's decisions, with only occasional discrepancies in 2014 and 2018. This suggests that while a
+                  large number of teams meet statistical criteria for playoff selection, the committee's judgment-based
                   approach works well in identifying the most deserving teams.
                 </p>
               </div>
@@ -498,99 +432,31 @@ export default function CollegeFootballAnalysisPage() {
           </div>
         </section>
 
-        {/* Conclusions and Impact */}
+        {/* Conclusions */}
         <section id="conclusions" className="mb-16 scroll-mt-24">
           <div className="bg-slate-800/50 rounded-xl p-8 border border-slate-700">
-            <h3 className="text-3xl font-bold text-white mb-6">Conclusions & Impact</h3>
-            
-            <div className="space-y-8">
-              <div className="bg-slate-700/30 rounded-lg p-6">
-                <h4 className="text-xl font-semibold text-blue-400 mb-3">Statistical Correlation Among Teams</h4>
-                <p className="text-gray-300 text-lg text-justify">
-                  A prominent outcome of the linear modeling is the discovery of high statistical correlation among playoff 
-                  teams across different years. The consistency of R-squared values above 0.86 for total statistics indicates 
-                  that certain key metrics play a pivotal role in determining a team's likelihood of making the playoffs. This 
-                  consistency reveals predictable patterns in playoff-caliber performance.
-                </p>
-              </div>
+            <h3 className="text-3xl font-bold text-white mb-6">Conclusions</h3>
 
-              <div className="bg-slate-700/30 rounded-lg p-6">
-                <h4 className="text-xl font-semibold text-blue-400 mb-3">Offense Over Defense</h4>
-                <p className="text-gray-300 text-lg text-justify">
-                  In the perennial debate of offense versus defense, the findings lean slightly toward offense as a more 
-                  reliable predictor of playoff success (R² 0.904 vs 0.895). This suggests that while a strong defense is 
-                  important, the ability to consistently score and gain yardage may have a slightly greater impact on a team's 
-                  playoff prospects. However, both remain essential components of championship-caliber teams.
-                </p>
-              </div>
+            <div className="space-y-4 text-gray-300 text-lg">
+              <p className="text-left md:text-justify">
+                Linear modeling revealed high statistical correlation among playoff teams (R² &gt; 0.86), with offense
+                slightly outweighing defense (R² 0.904 vs 0.895) as a playoff predictor. Total season statistics
+                (R² 0.861) proved superior to per-game averages (R² 0.368) for playoff correlation.
+              </p>
 
-              <div className="bg-slate-700/30 rounded-lg p-6">
-                <h4 className="text-xl font-semibold text-blue-400 mb-3">Total Season Stats vs Averages</h4>
-                <p className="text-gray-300 text-lg text-justify">
-                  The analysis highlights the superiority of total season statistics (R² 0.861) over per-game 
-                  averages (R² 0.368) in correlating with playoff success. Total statistics provide a more holistic view of 
-                  team performance throughout the season, capturing the full extent of capabilities and consistency over time 
-                  rather than game-by-game fluctuations that averages represent.
-                </p>
-              </div>
-
-              <div className="bg-slate-700/30 rounded-lg p-6">
-                <h4 className="text-xl font-semibold text-blue-400 mb-3">Variations Across Conferences</h4>
-                <p className="text-gray-300 text-lg text-justify">
-                  Examining conference-wise performance revealed significant differences reflecting strategic and stylistic 
-                  variations in approach. Teams in the SEC and ACC consistently show the most playoff-ready statistical 
-                  profiles with balanced excellence. The Big 12 and Pac-12 show higher-scoring, offense-oriented styles, while 
-                  the Big Ten tends toward more defensive-focused play. These patterns illustrate how regional characteristics 
-                  and conference philosophies influence the path to playoff consideration.
-                </p>
-              </div>
-
-              <div className="bg-slate-700/30 rounded-lg p-6">
-                <h4 className="text-xl font-semibold text-blue-400 mb-3">Evaluation of Playoff Team Selections</h4>
-                <p className="text-gray-300 text-lg text-justify">
-                  The analysis suggests that while a large number of teams meet statistical criteria for playoff selection, 
-                  the incidence of underperformance among selected teams is minimal (only 2 instances across 9 years). This 
-                  underscores the effectiveness of the CFB Playoff Committee's decision-making process. The statistical models 
-                  largely validate committee selections, showing that playoff teams generally possess the quantitative 
-                  metrics that correlate with success. Notable exceptions in 2014 (Florida State) and 2018 (Notre Dame) suggest 
-                  that in rare cases, teams just outside the playoff bracket might have been statistically justified for inclusion.
-                </p>
-              </div>
-
-              <div className="bg-slate-700/30 rounded-lg p-6">
-                <h4 className="text-xl font-semibold text-blue-400 mb-3">Limitations & Future Improvements</h4>
-                <p className="text-gray-300 text-lg text-justify mb-4">
-                  While the linear modeling approach provided strong findings, it focused on statistical aspects 
-                  and may overlook other crucial factors:
-                </p>
-                <ul className="space-y-2 text-gray-300">
-                  <li>→ Dataset lacked variables like Strength of Schedule, Timing of Losses, and Conference Championship status</li>
-                  <li>→ Qualitative factors such as injuries, coaching strategies, and team morale could not be captured</li>
-                  <li>→ Data integration challenges arose with file format changes in 2021 and 2022</li>
-                  <li>→ Conference realignments and potential CFB Playoff format expansions may limit applicability to future seasons</li>
-                  <li>→ Future analyses could benefit from machine learning models to uncover deeper patterns and incorporate more diverse variables</li>
-                </ul>
-              </div>
-
-              <div className="bg-gradient-to-r from-green-900/30 to-blue-900/30 border border-green-700 rounded-lg p-6">
-                <h4 className="text-2xl font-semibold text-green-400 mb-4">Project Impact</h4>
-                <p className="text-gray-300 text-lg text-justify leading-relaxed">
-                  This data science project showed the power of statistical analysis in understanding complex 
-                  sports phenomena. By combining quantitative modeling with clear data visualization, the analysis 
-                  provided comprehensive findings into what makes a college football team a playoff contender. The project 
-                  validated that both measurable performance metrics and committee judgment play crucial roles in determining 
-                  which teams reach the CFB Playoff, while showing proficiency in R programming, linear regression analysis, 
-                  ggplot2 visualization, and statistical interpretation.
-                </p>
-              </div>
+              <p className="text-left md:text-justify">
+                Conference analysis showed SEC and ACC teams with the most playoff-ready profiles, while Big 12 and
+                Pac-12 favor offense-oriented styles and Big Ten emphasizes defensive play. The CFB Playoff Committee's
+                selections were statistically validated, with only 2 underperformers across 9 years.
+              </p>
             </div>
           </div>
         </section>
 
         {/* Back Button */}
         <div className="text-center mt-12">
-          <a 
-            href="/#projects" 
+          <a
+            href="/#projects"
             className="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-all duration-300"
           >
             ← Back to All Projects
